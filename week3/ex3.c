@@ -38,18 +38,27 @@ void insert_node(struct Node* n){
 
 }
 
-void delete_node(struct Node* n){
+void delete_node(struct Node **n){
+    struct Node* temp = *n, *prev;
     int index = 0;
     printf("Enter the index of an element you want to delete:");
     scanf(" %d" , &index);
     if(counter<index || index<0){
-        printf("Error0: element with this index does not exist");
+        printf("Error0: element with this index does not exist\n");
         exit(0);
     }
-    for(int i=0; i<index-1;i++){
-       n = n->next;
+    if (index == 0){
+        *n = temp->next;       // Change head
+        free(temp);          // Free old head
+        return;
     }
-    n->next = n->next->next;
+    for(int i=0; i<index;i++){
+       prev = temp;
+       temp = temp->next;
+
+    }
+    prev->next = temp->next;
+    free(temp);
     counter--;
 }
 
@@ -82,7 +91,7 @@ int main(){
    print_list(head);
    insert_node(head); //by index
    print_list(head);
-   delete_node(head); //be index
+   delete_node(&head); //by index
    print_list(head);
 
    return 0;
