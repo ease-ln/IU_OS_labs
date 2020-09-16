@@ -1,3 +1,4 @@
+//the programm does not work do not waste time
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
