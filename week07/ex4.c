@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 void* myrealloc(void *ptr, size_t size){
-  if(ptr==NULL){
+  if(ptr == NULL){
     ptr = malloc(size);
     return ptr;
   }
