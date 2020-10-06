@@ -1,0 +1,9 @@
+Physical VS Virtual
+
+Physical.
+Physical addresses are hardware addressess(location) of data that are available in a physical memory. 
+
+Virtual.
+Virtual(logical) addresses are genetated by CPU while process is running, it is address to some illusion of memory. VM connected to PM via MMU(memory managment system)
+
+

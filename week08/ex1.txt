@@ -1,0 +1,8 @@
+              total        used        free      shared  buff/cache   available
+Mem:          7,9Gi       5,2Gi       2,7Gi          0B          0B       2,7Gi
+Swap:         9,3Gi       291Mi       9,0Gi
+Total:         17Gi       5,5Gi        11Gi
+
+Above the data from MobaXretm 
+
+
