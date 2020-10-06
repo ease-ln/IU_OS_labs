@@ -3,6 +3,9 @@
 /*
 the average turnaround and waiting time in round robin
  is less comparing to the FCFS and SJF
+ FCFS is better for a small burst time. 
+ The SJF is better if the process comes to processor simultaneously.
+ Round Robin is better to adjust the average waiting time desired.
 */
 
 /* Round robin implementation
