@@ -1,0 +1,13 @@
+Let's consider the sequence of repeated values equal to n.
+In our case n = 10, 50 and 100;
+The sequence is repeated 1000/n is k, or k = 100, 20, 10 consequently,
+then the cycle will be added to the cache
+that means all other 1000-n calls will be hits.
+
+example
+n = 3
+1 2 3 1 2 3 1 2 3 1 2 3 ...
+hit 997 miss 3
+
+if all values are unique than no hits.
+ 
