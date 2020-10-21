@@ -1,0 +1,23 @@
+  21/10/2020   17:42.25  link ./week01/file.txt _ex2.txt
+
+                                                                               ✔
+  /home/mobaxterm/week10 
+  21/10/2020   17:42.55  ls -i _ex2.txt
+7318349394487293 _ex2.txt
+                                                                               ✔
+
+  /home/mobaxterm/week10 
+  21/10/2020   17:43.07  sudo find / -inum 7318349394487293
+[sudo] password for Arina:
+/week01/file.txt
+/week10/_ex2.txt
+                                                                               ✔
+
+  /home/mobaxterm/week10 
+  21/10/2020   17:44.46  find . -inum 7318349394487293 -exec rm {} \;
+find: invalid number '7318349394487293'
+                                                                               ✘
+
+  /home/mobaxterm/week10 
+  21/10/2020   17:46.58  ls -i _ex2.txt
+                                                                               ✔

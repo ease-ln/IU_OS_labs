@@ -1,0 +1,29 @@
+  20/10/2020   19:02.34   /home/mobaxterm/week10  chmod -x file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:03.14   /home/mobaxterm/week10  ls -l file_ex3.txt
+-rw-rw-r--    1 Arina    UsersGrp         0 Oct 20 19:03 file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:03.26   /home/mobaxterm/week10  chmod u=rwx file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:03.51   /home/mobaxterm/week10  chmod o=rwx file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:04.12   /home/mobaxterm/week10  ls -l file_ex3.txt
+-rwxrw-rwx    1 Arina    UsersGrp         0 Oct 20 19:03 file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:04.23   /home/mobaxterm/week10  chmod g=u file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:09.27   /home/mobaxterm/week10  ls -l file_ex3.txt
+-rwxrwxrwx    1 Arina    UsersGrp         0 Oct 20 19:03 file_ex3.txt
+                                                                                                                                                                                                             ✔
+
+  20/10/2020   19:09.53   /home/mobaxterm/week10 
+
+660 means rw- rw- r--
+775 means rwx rw- rwx
+777 means rwx rwx rwx
