@@ -10,7 +10,7 @@ int main() {
 	int FILE = open("ex1.txt", O_RDWR);
 	fstat(FILE, &st);
 	char *mapping = mmap(NULL, st.st_size, PROT_WRITE, MAP_SHARED, FILE, 0);
-    ftruncate(FILE, strlen(string)*sizeof(char));
+    	ftruncate(FILE, strlen(string)*sizeof(char));
 	strcpy(mapping, string);
 	close(FILE);
 	return 0;
