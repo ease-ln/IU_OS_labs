@@ -1,0 +1,22 @@
+
+  /home/mobaxterm/week11 
+  27/10/2020   17:00.47  gcc ex3.c -o ex3
+                                                                               ✔
+
+  /home/mobaxterm/week11 
+  27/10/2020   17:01.06  ./ex3
+Hello
+Hello
+                                                                               ✔
+
+  /home/mobaxterm/week11 
+  27/10/2020   17:01.08  gcc ex3.c -o ex3
+                                                                               ✔
+
+  /home/mobaxterm/week11 
+  27/10/2020   17:01.32  ./ex3
+Hello
+
+
+In 1 program 2 "Hello" is printed because two indentical procedures are created and buffer content is the same for both of them which is printed in both procedures
+In 2 program 1 "Hello" is printed because of "\n" and then two indentical procedures with empty buffer are created which prints "\n"
