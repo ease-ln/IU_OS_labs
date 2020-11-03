@@ -1,0 +1,22 @@
+O_SYNC makes copying significantly slower
+buffer rate positivly correlates with the coping rate(bigger buffer, faster coping)
+
+file size 33 643 Kb
+
+buffer 1024
+
+real    0m 1.03s
+user    0m 0.06s
+sys     0m 0.26s
+
+buffer 8
+
+real    0m 8.12s
+user    0m 1.75s
+sys     0m 6.35s
+
+8 byte buffer with O_SYNC = 1
+
+real    0m 27.29s
+user    0m 5.15s
+sys     0m 22.12s
