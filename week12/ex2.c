@@ -22,7 +22,6 @@ int main(int argc, char *argv[]) {
     for(int i = 0; i < num_file; i++) {
         files[i] = fopen(argv[1+append+i], fmode);
         if(files[i] == NULL) {
-            fprintf(stderr, "Error w\n", argv[1+append+i]);
             exit(1);
         }
     }
