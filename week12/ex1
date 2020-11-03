@@ -1,0 +1,1 @@
+head /dev/random | tr -dc A-Za-z0-9 | head -c 20 > ex1.txt
