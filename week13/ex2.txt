@@ -1,0 +1,27 @@
+Detection and Recovery.
+
+ - The system does not attemp to prevent the deadlock. Instead, It lets deadloch happand and afrer that tries to detect when it happens and tries to recovery. 
+ - Methods detect deadlock
+	- Resource graph, It is possible only is we have one resource of each type;
+	- Matrix of resources, which already works with multiple resources of each type.
+ - Methods to recovery: 
+	- Rollback, cheackpoints for which we can restart late;
+	- Preemption, requarantee resources;
+	- Killing process, have to carefully chose which prosses can be killed and be reruned with no ill effect.
+ Conclusion: Works well in systems where resources are requested all at once.
+
+Deadlock Avoidance.
+
+- Deadlocks can be avoided, but only if certain information is available in advance. The system must be able to decide whether granting a resource is safe or not and make the allocation only when it is safe. 
+ - Banker's Algorithm, which works for both: single and multiple resources. It checks whatever granting leads to safe state, if it does not, It denied, else It carried.
+ Conclussion: Works well in systems where resources are requested one at a time and only.
+
+Deadlock Prevention.
+
+ - Assure that at least one of the conditions stated below is never satisfied: Mutual-Exclusion, Hold-and-Wait, No-Preemption, Circular wait.
+ - Mutual-Exclusion, spool everything;
+ - Hold-and-Wait, request all resources init.;
+ - No-Preemption, to take back resources that process uses (nearly impossible)
+ - Circular Wait Condition: order resources numerically.
+ Conculusion: Works well bt have poor resource utilization, therefore reduced throughputs.
+ 

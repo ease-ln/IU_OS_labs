@@ -1,0 +1,3 @@
+Process 0 is dedlocked
+Process 1 is dedlocked
+Process 2 is dedlocked
